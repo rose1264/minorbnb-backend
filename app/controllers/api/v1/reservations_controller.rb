@@ -1,4 +1,6 @@
 class Api::V1::ReservationsController < ApplicationController
+  skip_before_action :authorized, only: [:index, :create]
+
   def index
     @reservations = Reservation.all
     render json: @reservations

@@ -1,4 +1,6 @@
 class Api::V1::ListingsController < ApplicationController
+  skip_before_action :authorized, only: [:index, :create]
+
   def index
     @listings = Listing.all
     render json: @listings
