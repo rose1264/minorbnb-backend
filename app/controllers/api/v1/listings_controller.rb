@@ -1,8 +1,7 @@
 class Api::V1::ListingsController < ApplicationController
-  skip_before_action :authorized, only: [:create]
+  skip_before_action :authorized, only: [:create, :index]
 
   def index
-    byebug
     @listings = Listing.all
     render json: @listings
   end
