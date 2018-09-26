@@ -1,5 +1,5 @@
 class UserSerializer < ActiveModel::Serializer
-  attributes :id, :name, :avatar
+  attributes :id, :name
 
   has_many :listings, foreign_key: 'host_id'
   has_many :trips, class_name: 'Reservation', foreign_key: 'guest_id'

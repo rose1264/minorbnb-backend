@@ -1,6 +1,5 @@
 class User < ActiveRecord::Base
   has_secure_password
-  mount_uploader :avatar, AvatarUploader
   validates :name, uniqueness: { case_sensitive: false }
 
   has_many :listings, foreign_key: 'host_id'
