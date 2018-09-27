@@ -14,6 +14,6 @@ class Api::V1::ListingsController < ApplicationController
   private
 
   def listing_params
-    params.require(:listing).permit(:name, :price, :address, :description, :host_id, :neighbourhood_id)
+    params.permit(:name, :price, :address, :description, :host_id, :neighbourhood_id, {avatars: []})
   end
 end

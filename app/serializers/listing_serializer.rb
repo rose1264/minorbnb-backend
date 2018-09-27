@@ -1,5 +1,5 @@
 class ListingSerializer < ActiveModel::Serializer
-  attributes :id, :name, :price, :address, :description
+  attributes :id, :name, :price, :address, :description, :avatars
 
   belongs_to :host, class_name: 'User'
   belongs_to :neighbourhood

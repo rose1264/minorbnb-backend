@@ -1,5 +1,5 @@
 class Listing < ActiveRecord::Base
-  
+  mount_uploaders :avatars, AvatarUploader
   belongs_to :host, class_name: 'User'
   belongs_to :neighbourhood
 
