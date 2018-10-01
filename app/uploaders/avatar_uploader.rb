@@ -71,11 +71,12 @@ class AvatarUploader < CarrierWave::Uploader::Base
   # Create different versions of your uploaded files:
   version :thumb do
     process resize_to_fit: [50, 50]
-    process :round
+
   end
 
   version :demo do
     process resize_to_fit: [200, 200]
+    process :round
   end
 
   # Provide a default URL as a default if there hasn't been a file uploaded:
