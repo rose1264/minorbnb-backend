@@ -1,4 +1,4 @@
-# MinorBnb Frontend - ReactJs
+# MinorBnb Backend - Ruby on Rails
 
 ## Project Overview
 ### <a href="https://medium.com/@rose_shumei_huang/minorbnb-an-airbnb-for-minors-5838782a35d0">Check out more details and video demo here</a>
